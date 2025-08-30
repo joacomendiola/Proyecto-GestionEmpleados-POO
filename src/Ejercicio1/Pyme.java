@@ -11,7 +11,6 @@ public class Pyme {
     private int horafinalizacion;
     private String domicilio;
     private TreeMap<Integer,Empleado> empleados;
-
     private double totalhaberes;
     //Constructor
     public Pyme(Persona duenio, int horainicio, int horafinalizacion, String domicilio) {
@@ -28,18 +27,18 @@ public class Pyme {
     }
     public void agregarEmpleado(Empleado nuevo){
         empleados.put(nuevo.getLegajo(),nuevo);
-        totalhaberes+=nuevo.calcularsalario();
+        totalhaberes+=nuevo.calcularSalario();
     }
     public void eliminarEmpleado(Empleado eliminar){
         empleados.remove(eliminar.getLegajo());
-        totalhaberes-=eliminar.calcularsalario();
+        totalhaberes-=eliminar.calcularSalario();
     }
     public ArrayList<Empleado> listarPorLegajo(){
-        return new ArrayList<>(empleados.values());
+        return new ArrayList<>(empleados.values()); // TreeMap ordena por legajo (clave)
     }
     public ArrayList<Empleado> listarPorApellidoNombre(){
         ArrayList<Empleado> aux=new ArrayList<>(empleados.values());
-        Collections.sort(aux);
+        Collections.sort(aux); // usa compareTo (apellido, nombre)
         return aux;
     }
 }
