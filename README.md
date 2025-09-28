@@ -1,58 +1,64 @@
 <div align="center">
 
-# 💼 Sistema de Gestión de Empleados - POO
+# 💼 Sistema de Gestión de Empleados
 
-![Java](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![POO](https://img.shields.io/badge/Paradigma-POO-007396?style=for-the-badge&logo=java&logoColor=white)
-![Estado](https://img.shields.io/badge/Estado-✅_Completado-28a745?style=for-the-badge)
-![Licencia](https://img.shields.io/badge/Licencia-MIT-yellow?style=for-the-badge)
+![Java](https://img.shields.io/badge/Java-17-red)
+![POO](https://img.shields.io/badge/Paradigma-POO-blue)
+![Estado](https://img.shields.io/badge/Estado-Terminado-success)
 
-**Sistema de gestión de nóminas para PYMEs desarrollado en Java aplicando principios de POO**
+**Sistema de nóminas para PYMEs desarrollado en Java aplicando POO**
 
 </div>
 
 ---
 
-## 📋 Tabla de Contenidos
-- [✨ Características](#-características)
-- [🏗️ Arquitectura](#️-arquitectura)
-- [🚀 Quick Start](#-quick-start)
-- [📊 Tipos de Empleados](#-tipos-de-empleados)
-- [💻 Uso del Sistema](#-uso-del-sistema)
-- [📁 Estructura del Proyecto](#-estructura-del-proyecto)
-- [🎯 Ejemplos de Código](#-ejemplos-de-código)
+## 📖 Descripción
+Trabajo práctico de la materia **Programación Orientada a Objetos**.  
+Sistema que modela una PYME con distintos tipos de empleados, aplicando **herencia, polimorfismo y clases abstractas** en Java.
 
 ---
 
 ## ✨ Características
 
-<div align="center">
-
-| Funcionalidad | Descripción |
-|---------------|-------------|
-| **👥 Gestión de Empleados** | Altas, bajas y modificación de empleados |
-| **💰 Cálculo de Haberes** | Cálculo automático según tipo de empleado |
-| **📊 Ordenamientos** | Por legajo, apellido y nombre |
-| **📈 Reportes** | Totales individuales y generales |
-| **💾 Persistencia** | Gestión de datos en memoria |
-
-</div>
+- **Gestión completa** de empleados (altas, listados, cálculos)
+- **4 tipos de empleados** con diferentes formas de cálculo
+- **Cálculo automático** de haberes según categoría
+- **Múltiples ordenamientos** (por legajo, apellido/nombre)
+- **Interfaz de consola** clara y organizada
 
 ---
 
-## 🏗️ Arquitectura
+## 🏗️ Arquitectura POO
 
-### 🔷 Principios POO Implementados
-- **Herencia**: Clase base `Empleado` extendida por tipos específicos
-- **Polimorfismo**: Método `calcularSueldo()` con diferentes implementaciones
-- **Clases Abstractas**: `Empleado` como clase abstracta
-- **Encapsulamiento**: Atributos privados con getters/setters
+### Principios implementados:
+- **🔷 Herencia**: Clase base `Empleado` extendida por tipos específicos
+- **🔄 Polimorfismo**: Método `calcularSueldo()` con diferentes implementaciones
+- **📦 Encapsulamiento**: Atributos privados con acceso controlado
+- **⚡ Clases Abstractas**: `Empleado` como clase abstracta base
 
 ---
 
-## 🚀 Quick Start
+## 📊 Tipos de Empleados
+
+| Tipo | Descripción | Cálculo de Sueldo |
+|------|-------------|-------------------|
+| **👔 Jefe** | Personal de dirección | Sueldo fijo mensual |
+| **💰 Comisión** | Vendedores con comisiones | Sueldo base + (ventas × %comisión) |
+| **⏱️ Por Hora** | Personal contratado por horas | Horas normales × tarifa + horas extra × tarifa extra |
+| **🛠️ Subordinado** | Personal de producción | Artículos producidos × pago por artículo |
+
+---
+
+## 🚀 Comenzar
 
 ### Prerrequisitos
+- Java 17 o superior
+- IDE (IntelliJ IDEA recomendado)
+
+### Ejecución
 ```bash
-Java 17 o superior
-IDE (IntelliJ IDEA recomendado)
+# Compilar
+javac -d bin src/*.java
+
+# Ejecutar
+java -cp bin Main
