@@ -6,25 +6,31 @@
 ![POO](https://img.shields.io/badge/Paradigma-POO-blue)
 ![Estado](https://img.shields.io/badge/Estado-Terminado-success)
 
-**Sistema de nóminas para PYMEs desarrollado en Java aplicando POO**
+**Sistema de nóminas para PYMEs con diferentes tipos de empleados y cálculos de sueldo específicos**
 
 </div>
 
 ---
 
 ## 📖 Descripción
-Trabajo práctico de la materia **Programación Orientada a Objetos**.  
-Sistema que modela una PYME con distintos tipos de empleados, aplicando **herencia, polimorfismo y clases abstractas** en Java.
+Sistema de gestión de nóminas desarrollado en Java que implementa **4 tipos de empleados** con diferentes formas de cálculo de sueldo. Aplica principios de **POO** como herencia, polimorfismo y clases abstractas para modelar una estructura empresarial real.
+
+**Tipos de empleados implementados:**
+- 👔 **Jefe** - Sueldo fijo mensual
+- 💰 **Comisión** - Sueldo base + porcentaje sobre ventas  
+- ⏱️ **Por Horas** - Pago por horas normales y extra
+- 🛠️ **Subordinado** - Pago por artículo producido
 
 ---
 
 ## ✨ Características
 
 - **Gestión completa** de empleados (altas, listados, cálculos)
-- **4 tipos de empleados** con diferentes formas de cálculo
+- **4 tipos de empleados** con fórmulas de cálculo específicas
 - **Cálculo automático** de haberes según categoría
 - **Múltiples ordenamientos** (por legajo, apellido/nombre)
 - **Interfaz de consola** clara y organizada
+- **Sistema de nóminas** con totales generales
 
 ---
 
